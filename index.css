@@ -5,8 +5,8 @@
 }
 
 body {
-  display: grid;
-  place-content: center;
+  /* display: grid; */
+  align-items: center;
 }
 
 .page-container {
@@ -19,23 +19,40 @@ body {
     "stories right-sidebar" 50px
     "main-posts right-sidebar" 1fr/
     0.7fr 0.3fr;
+    /* position: relative; */
 }
 
 .top-header {
   grid-area: top-header;
   display: grid;
   
-  /* width: 100vw; */
-  grid-template-columns: 200px 0.5fr auto;
-  background-color: rgb(233, 74, 74);
+  /* width: 50%; */
+  grid-template-columns: 0.2fr 0.3fr 0.5fr;
+  /* background-color: rgb(233, 74, 74); */
   justify-content: space-around;
   align-items: center;
+  grid-gap: 100px;
   
+  
+}
+.instagram-logo{
+  height: 60%;
+  width: 50%;
 }
 
 .navigation {
   display: grid;
   grid-template-columns: repeat(6, 60px);
+  place-content: center;
+  background-color: aqua;
+}
+
+.nav-profile-pic{
+  height: 90%;
+  width: 100%;
+  /* background-color: black; */
+  /* align-items: center; */
+  
 }
 
 .right-sidebar {
