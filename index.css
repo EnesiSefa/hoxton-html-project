@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-container {
+  height: 100vh;
+  background-color: rgba(214, 236, 15, 0.418);
+  display: grid;
+  grid-template:
+    "top-header top-header" 50px
+    "main-posts right-sidebar" 1fr/
+    0.7fr 0.3fr;
+}
+
+.top-header {
+  grid-area: top-header;
+  display: grid;
+  grid-template-columns: auto  200px  auto;
+  background-color: rgb(233, 74, 74);
+}
+
+
+.navigation{
+  display: grid;
+  grid-template-columns: repeat(6,auto);
+}
+
+.right-sidebar {
+  grid-area: right-sidebar;
+  background-color: rgba(0, 0, 255, 0.507);
+  height: 50vh;
+}
+
+.main-posts {
+  grid-area: main-posts;
+  background-color: rgb(52, 223, 52);
+}
