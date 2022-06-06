@@ -57,5 +57,6 @@ body {
 
 .post{
   display: grid;
+  outline: 1px solid black;
   
 }
