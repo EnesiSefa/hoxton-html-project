@@ -118,7 +118,7 @@ body {
 
 .side-profile{
   margin: 10px;
-  /* background-color: aqua; */
+  background-color: aqua;
   display: grid;
   grid-auto-flow: column;
   /* outline: 1px solid black; */
@@ -135,8 +135,20 @@ body {
   margin: 10px;
   /* background-color: blueviolet; */
   display: grid;
-  grid-auto-flow: column;
+ 
+ 
 
+}
+.sugg-title{
+  height: 100px;
+  display:grid ;
+  grid-template-columns: auto auto;
+  background-color: aqua;
+}
+
+.sugg-main{
+  display: grid;
+  grid-auto-flow: column;
 }
 
 
