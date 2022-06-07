@@ -18,7 +18,7 @@ body {
     "header header header header" 50px
     "space1 stories right-sidebar space2" 80px
     "space1 main-posts right-sidebar space2" 1fr/
-    1fr 500px 200px 1fr;
+    1fr 500px 300px 1fr;
     grid-gap: 10px;
 }
 
@@ -34,16 +34,16 @@ body {
   justify-content: space-around;
 }
 .instagram-logo-pic {
-  outline: 1px solid black;
+  
 
   height: 40px;
 }
 
 .searchbar {
   height: 30px;
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
   /* place-items: center; */
-  align-items: center;
+  align-content: center;
 }
 
 .searchbar-inside {
@@ -107,13 +107,45 @@ body {
 }
 
 .right-sidebar {
+  display: grid;
+  grid-auto-rows: 70px 200px;
   grid-area: right-sidebar;
-  background-color: rgba(0, 0, 255, 0.507);
+  outline: 1px solid rgb(184, 180, 180);
+  height: 60vh;
+  
+  
 }
 
+.side-profile{
+  margin: 10px;
+  /* background-color: aqua; */
+  display: grid;
+  grid-auto-flow: column;
+  /* outline: 1px solid black; */
+  
+}
+
+.side-profile-pic{
+  height: 40px;
+  clip-path: circle();
+}
+
+
+.suggestions{
+  margin: 10px;
+  /* background-color: blueviolet; */
+  display: grid;
+  grid-auto-flow: column;
+
+}
+
+
+
 .main-posts {
+  display: grid;
   grid-area: main-posts;
-  /* background-color: brown; */
+  grid-gap: 30px;
+  
 }
 
 .post{
@@ -121,10 +153,13 @@ body {
   /* border: 1px solid black; */
   outline: 1px solid rgb(189, 186, 186);
   grid-gap: 10px;
+  border-radius: 6px;
+  /* justify-items: start; */
 }
 
 .post-header{
-  padding: 10px;
+  margin: 10px;
+  /* padding: 10px; */
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
@@ -136,14 +171,27 @@ body {
   /* margin-top: 10px; */
   display: grid;
   grid-template-columns: auto auto;
-  align-items: center;
+  /* align-items: center; */
+}
+
+.three-dots{
+  display: grid;
+  
+
 }
 
 .post-icon{
 
 }
-.profile-username{
-  /* display: grid; */
+.likes{
+  display: grid;
+  padding: 10px;
+
+}
+.profile-username-cap{
+  display: grid;
+  padding: 10px;
+  
 
 }
 
@@ -166,13 +214,44 @@ body {
 .interaction{
   display: grid;
   grid-template-columns: auto auto;
+  margin: 5px;;
+ 
 }
+.like-com-share{
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start; 
+  grid-gap: 10px;
+  
+
+}
+
 .save-button{
   display: flex;
   justify-content: end;
 }
 
+.post-info{
+
+}
+
 .profile-username-cap{
   display: flex;
+  
+}
+
+.comments{
+  display: grid;
+  grid-auto-flow: column;
+  
+  align-items: center;
+  
+  grid-gap: 30px;
+  /* outline: 1px solid rgb(202, 199, 199); */
+  padding: 10px;
+}
+.comment-box{
+  border:none;
+  outline: none;
   
 }
