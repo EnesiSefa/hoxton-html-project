@@ -7,14 +7,23 @@
 body{
     display: grid;
     /* align-content: center; */
-    justify-content: bottom;
-    background-color: bisque;
+    /* justify-content: bottom; */
+    /* background-color: rgb(233, 150, 50); */
+    place-content: center;
+    height: 100vh;
 }
 .container{
-    background-color: aqua;
+    display: grid;
+    /* background-color: aqua; */
     /* place-content: center; */
 }
 
 .box{
     display: grid;
+    height: 50vh;
+}
+
+.username{
+    background-color: aqua;
+    height: 40px;
 }

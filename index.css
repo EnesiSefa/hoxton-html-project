@@ -19,7 +19,7 @@ body {
     "space1 stories right-sidebar space2" 80px
     "space1 main-posts right-sidebar space2" 1fr/
     1fr 500px 300px 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 
 .header {
@@ -43,7 +43,7 @@ body {
   height: 30px;
   /* outline: 1px solid black; */
   /* place-items: center; */
-  align-content: center;
+  align-items: center;
 }
 
 .searchbar-inside {
@@ -69,6 +69,7 @@ body {
   grid-gap: 10px;
   grid-area: stories;
   /* background-color: rgb(38, 235, 12); */
+  
 }
 
 .story-posts {
@@ -76,10 +77,13 @@ body {
   display: grid;
   grid-auto-flow: column;
   align-content: center;
+  border: 1px solid #d6d2d2;
+  border-radius: 6px;
   
 }
 
 .story-content {
+
   
   display: grid;
   justify-items: center;
@@ -108,7 +112,7 @@ body {
 
 .right-sidebar {
   display: grid;
-  grid-auto-flow: row;
+  grid-template-rows: 0.1fr auto auto;
   grid-area: right-sidebar;
   outline: 1px solid rgb(184, 180, 180);
   height: 60vh;
@@ -118,9 +122,9 @@ body {
 
 .side-profile{
   margin: 10px;
-  background-color: rgb(241, 148, 148);
+  /* background-color: rgb(241, 148, 148); */
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: 60px auto auto;
   /* outline: 1px solid black; */
   
 }
@@ -133,7 +137,7 @@ body {
 
 .suggestion-box{
   margin: 10px;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   display: grid;
   
  
@@ -143,8 +147,9 @@ body {
 .suggestions-for-you{
   /* height: 10px; */
   display:grid ;
-  grid-template-columns: auto auto;
-  background-color: aqua;
+  grid-template-columns: 170px auto;
+  /* background-color: aqua; */
+  color: #8e8e8e;
 }
 
 .suggestions-area{
@@ -169,7 +174,7 @@ body {
   display: grid;
   /* border: 1px solid black; */
   outline: 1px solid rgb(189, 186, 186);
-  grid-gap: 10px;
+  
   border-radius: 6px;
   /* justify-items: start; */
 }
@@ -262,9 +267,10 @@ body {
   grid-auto-flow: column;
   
   align-items: center;
+  justify-content: start;
   
   grid-gap: 30px;
-  /* outline: 1px solid rgb(202, 199, 199); */
+  outline: 1px solid rgb(202, 199, 199);
   padding: 10px;
 }
 .comment-box{
