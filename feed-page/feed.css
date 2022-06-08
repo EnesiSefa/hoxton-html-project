@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.page-container {
+  height: 100vh;
+  width: 100%;
+  /* background-color: rgba(172, 163, 41, 0.397); */
+  display: grid;
+  grid-template:
+    "header header header " 50px
+    ". main . " 1fr
+    ". footer ." 20px/
+    100px 1fr 100px;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-auto-flow: column;
+  /* background-color: rgba(0, 255, 255, 0.733); */
+  place-items: center;
+}
+.instagram-logo-pic {
+  height: 40px;
+}
+
+.searchbar {
+  display: grid;
+  grid-auto-flow: column;
+  border-radius: 5px;
+  background-color: #efefef;
+  /* place-content: center; */
+}
+
+.navigation-panel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+}
+.nav-profile-pic {
+  height: 30px;
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+  /* background-color: rgba(0, 0, 255, 0.432); */
+}
+
+.profile {
+  display: grid;
+  grid-template:
+    "profile-icon profile-info" 0.2fr
+    "profile-icon  profile-follower-stat" 0.2fr
+    "profileicon profile-name-bio" 0.2fr
+    "story-archive story-archive" 0.2fr/
+    500px 300px;
+  background-color: aqua;
+
+  /* grid-gap: 40px; */
+}
+.profile-icon {
+  grid-area: profile-icon;
+}
+
+.profile-pic {
+  height: 140px;
+  width: 100px;
+}
+
+.profile-info {
+  grid-area: profile-info;
+}
+
+.profile-username-settings {
+  display: grid;
+  grid-auto-flow: column;
+  background-color: rgb(245, 226, 220);
+}
+.profile-follower-stat {
+  grid-area: profile-follower-stat;
+  display: grid;
+  grid-auto-flow: column;
+  background-color: rgb(216, 216, 25);
+  font-size: small;
+}
+
+.profile-name-bio {
+  grid-area: profile-name-bio;
+}
+
+.story-archive {
+  grid-area: story-archive;
+  display: grid;
+  grid-auto-flow: column;
+  background-color: yellow;
+}
+.story-pic {
+  height: 50px;
+  clip-path: circle();
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgba(131, 226, 43, 0.582);
+}
