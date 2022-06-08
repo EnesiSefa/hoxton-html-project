@@ -24,14 +24,21 @@
               <input
                 class="username"
                 type="text"
+                minlength="2"
+                maxlength="20"
                 placeholder="Phone number,username or email"
               />
             </label>
             <label>
-              <input class="password" type="password" placeholder="Password" />
+              <input 
+              class="password" 
+              type="password" 
+              minlength="6"
+              maxlength="20"
+              placeholder="Password" />
             </label>
             <label class="button">
-              <a href="#"
+              <a class="button-link" href="#"
                 ><button class="log-in-button"><p>Log in</p></button></a
               >
             </label>

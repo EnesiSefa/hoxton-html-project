@@ -68,22 +68,43 @@ body {
     line-height: 18px;
     width: 250px;
     padding: 9px 0px 7px 8px;
+    border:1px solid #dbdbdb;
+    transition: 0.5s;
+}
+.username:focus{
+    outline: 1px solid #757575;
+    font-size: 10px;
+}
+.password:focus{
+    font-size: 10px;
+    outline: 1px solid #757575;
 }
 
 .password{
     line-height: 18px;
     width: 250px;
     padding: 9px 0px 7px 8px;
+    border:1px solid #dbdbdb;
+    transition: 0.5s;
 
 }
 .button{
     display: grid;
     justify-content: center;
-    border-bottom: 1px solid rgb(185, 183, 183);
+    /* border-bottom: 1px solid rgb(185, 183, 183); */
     background-color: #b2dffc;
     width: 250px; 
+    transition: 0.5s;
     
 }
+.button:hover{
+    background-color: #0095f6;
+}
+
+.button-link:focus{
+    outline: 1px solid black;
+}
+
 .log-in-button{
     background: none;
     border: none;
@@ -91,7 +112,11 @@ body {
     color: white;
     font-size: 15px;
     line-height: 18px;
+    transition: 0.5s;
 }
+
+
+
 .or{
     display: flex;
     justify-content: center;
@@ -126,11 +151,14 @@ a{
 
 
 .nav-list{
-    /* place-content: center; */
+    place-content: center;
     justify-content: safe;
     display: grid;
     grid-template-columns: repeat(5, minmax(80px, 0.12fr));
     list-style: none;
+    font-size: small;
+    padding: 20px;
+    grid-gap: 5px;
     
 }
 
