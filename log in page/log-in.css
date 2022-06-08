@@ -1,29 +1,125 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    display: grid;
-    /* align-content: center; */
-    /* justify-content: bottom; */
-    /* background-color: rgb(233, 150, 50); */
-    place-content: center;
-    height: 100vh;
+body {
+    
+    /* background-color: black; */
+  display: grid;
 }
-.container{
+
+.container {
+  height: 100vh;
+  /* background-color: rgb(70, 207, 207); */
+  /* place-content: center; */
+ 
+
+}
+
+.main {
+  height: 100vh;
+
+  display: grid;
+  grid-template:
+    ". phone-frame log-in-box . " 0.5fr/
+    0.1fr 0.5fr 0.5fr 0.1fr;
+  /* background-color: rgb(65, 65, 209); */
+  place-content: center;
+  
+}
+
+.phone-frame {
+  grid-area: phone-frame;
+  display: grid;
+  /* background-color: rgb(96, 119, 119); */
+  place-content: center;
+}
+
+.iphone{
     display: grid;
+    height: 100px;
+    
+}
+
+.log-in-box {
+  grid-area: log-in-box;
+  display: grid;
+  /* background-color: rgb(245, 157, 24); */
+  justify-content: center;
+  
+  
+  
+}
+.insta-logo{
     /* background-color: aqua; */
-    /* place-content: center; */
+    height: 50px;
+    
 }
 
-.box{
+.log-in-form{
     display: grid;
-    height: 50vh;
+    grid-gap: 10px;
 }
 
 .username{
-    background-color: aqua;
+    height: 30px;
+    width: 250px;
+    padding: 9px 0px 7px 8px;
+}
+
+.password{
+    height: 30px;
+    width: 250px;
+    padding: 9px 0px 7px 8px;
+
+}
+.button{
+    display: grid;
+    justify-content: center;
+    border-bottom: 1px solid rgb(185, 183, 183);
+    background-color: #b2dffc;
+    height: 20px;
+    width: 250px;
+    
+}
+.log-in-button{
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+.or{
+    display: flex;
+    justify-content: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #385185;
+
+}
+
+.sign-up{
+    display: flex;
+    border: 1px solid rgb(135, 135, 139);
+    grid-gap: 5px;
+}
+
+.adv, p, a{
+    display: grid;
+    justify-items: center;
+}
+.banner{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.banner-pic{
     height: 40px;
 }
+
+
