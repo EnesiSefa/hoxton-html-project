@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -90,13 +91,13 @@ body {
   
 }
 .story-thumbnail{
-  clip-path: circle(35%);
+  clip-path: circle();
   /* display: grid */
    /* height: 50px; */
   
   /* border-radius: 50%; */
   background: radial-gradient(rgba(0, 0, 0, 0.15) 60%, transparent 0),
-    radial-gradient(white 15%, transparent 0),
+    radial-gradient(white 60%, transparent 0),
     linear-gradient(to top right, orange, deeppink);
 
 }
@@ -106,7 +107,7 @@ body {
   height: 60px;
   
   /* border-radius: 50%; */
-  clip-path: circle(35%);
+  clip-path: circle();
   
 }
 
@@ -147,9 +148,10 @@ body {
 .suggestions-for-you{
   /* height: 10px; */
   display:grid ;
-  grid-template-columns: 170px auto;
+  grid-template-columns: auto auto;
   /* background-color: aqua; */
   color: #8e8e8e;
+  font-size: small;
 }
 
 .suggestions-area{
