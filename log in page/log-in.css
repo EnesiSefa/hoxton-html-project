@@ -39,7 +39,7 @@ body {
 
 .iphone{
     display: grid;
-    height: 100px;
+    height: 400px;
     
 }
 
@@ -48,6 +48,7 @@ body {
   display: grid;
   /* background-color: rgb(245, 157, 24); */
   justify-content: center;
+  grid-gap: 20px;
   
   
   
@@ -64,13 +65,13 @@ body {
 }
 
 .username{
-    height: 30px;
+    line-height: 18px;
     width: 250px;
     padding: 9px 0px 7px 8px;
 }
 
 .password{
-    height: 30px;
+    line-height: 18px;
     width: 250px;
     padding: 9px 0px 7px 8px;
 
@@ -80,8 +81,7 @@ body {
     justify-content: center;
     border-bottom: 1px solid rgb(185, 183, 183);
     background-color: #b2dffc;
-    height: 20px;
-    width: 250px;
+    width: 250px; 
     
 }
 .log-in-button{
@@ -90,6 +90,7 @@ body {
     outline: none;
     color: white;
     font-size: 15px;
+    line-height: 18px;
 }
 .or{
     display: flex;
@@ -103,10 +104,11 @@ a{
 
 }
 
-.sign-up{
+.sign-up {
     display: flex;
     border: 1px solid rgb(135, 135, 139);
     grid-gap: 5px;
+    padding: 15px;
 }
 
 .adv, p, a{
@@ -122,4 +124,13 @@ a{
     height: 40px;
 }
 
+
+.nav-list{
+    /* place-content: center; */
+    justify-content: safe;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(80px, 0.12fr));
+    list-style: none;
+    
+}
 
