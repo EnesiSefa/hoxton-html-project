@@ -108,7 +108,7 @@ body {
 
 .right-sidebar {
   display: grid;
-  grid-auto-rows: 70px 200px;
+  grid-auto-flow: row;
   grid-area: right-sidebar;
   outline: 1px solid rgb(184, 180, 180);
   height: 60vh;
@@ -118,7 +118,7 @@ body {
 
 .side-profile{
   margin: 10px;
-  background-color: aqua;
+  background-color: rgb(241, 148, 148);
   display: grid;
   grid-auto-flow: column;
   /* outline: 1px solid black; */
@@ -131,24 +131,29 @@ body {
 }
 
 
-.suggestions{
+.suggestion-box{
   margin: 10px;
-  /* background-color: blueviolet; */
+  background-color: blueviolet;
   display: grid;
+  
  
  
 
 }
-.sugg-title{
-  height: 100px;
+.suggestions-for-you{
+  /* height: 10px; */
   display:grid ;
   grid-template-columns: auto auto;
   background-color: aqua;
 }
 
-.sugg-main{
+.suggestions-area{
   display: grid;
-  grid-auto-flow: column;
+  /* grid-auto-flow: column; */
+}
+.profile-suggestions{
+  display: grid;
+  grid-template-columns: 60px auto auto;
 }
 
 
