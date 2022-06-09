@@ -13,7 +13,7 @@
   display: grid;
   grid-template:
     "header header header " 50px
-    ". main . " 1fr
+    ". main . " 0.8fr
     ". footer ." 20px/
     100px 1fr 100px;
 }
@@ -49,60 +49,89 @@
 .main {
   grid-area: main;
   display: grid;
-  /* background-color: rgba(0, 0, 255, 0.432); */
+  background-color: rgba(52, 52, 236, 0.432);
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .profile {
   display: grid;
   grid-template:
-    "profile-icon profile-info" 0.2fr
-    "profile-icon  profile-follower-stat" 0.2fr
-    "profileicon profile-name-bio" 0.2fr
-    "story-archive story-archive" 0.2fr/
-    500px 300px;
-  background-color: aqua;
+    
+    "upper-profile upper-profile" 0.8fr
+    "story-archive story-archive" 0.5fr
+    "feed-post feed-post"0.4fr/
+    300px 300px;
+  /* background-color: aqua; */
+  justify-content: center;
 
   /* grid-gap: 40px; */
+  /* align-content:center ; */
 }
+
+.upper-profile{
+  grid-area: upper-profile;
+  display: grid;
+  grid-auto-flow: column;
+  background-color: #efefef;
+  align-items: center;
+
+}
+
 .profile-icon {
-  grid-area: profile-icon;
+  
+  /* background-color: rgba(165, 42, 42, 0.616); */
+  /* width: fit-content; */
+ 
 }
 
 .profile-pic {
-  height: 140px;
-  width: 100px;
+   height: 120px; 
+   clip-path: circle();
+
 }
 
 .profile-info {
-  grid-area: profile-info;
+  display: grid;
+  /* background-color: burlywood; */
+  /* align-content: center; */
+  grid-gap: 10px;
+  
 }
 
 .profile-username-settings {
   display: grid;
   grid-auto-flow: column;
-  background-color: rgb(245, 226, 220);
+  /* background-color: rgb(245, 226, 220); */
 }
 .profile-follower-stat {
-  grid-area: profile-follower-stat;
+  
   display: grid;
   grid-auto-flow: column;
-  background-color: rgb(216, 216, 25);
+  /* background-color: rgb(216, 216, 25); */
   font-size: small;
 }
 
 .profile-name-bio {
-  grid-area: profile-name-bio;
+  
 }
 
 .story-archive {
   grid-area: story-archive;
   display: grid;
   grid-auto-flow: column;
-  background-color: yellow;
+  /* background-color: yellow; */
+  align-items: center;
 }
 .story-pic {
   height: 50px;
   clip-path: circle();
+}
+
+.feed-post{
+  grid-area: feed-post;
+  display: grid;
+  /* background-color: blueviolet; */
 }
 
 .footer {
