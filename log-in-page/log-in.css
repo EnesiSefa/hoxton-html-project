@@ -5,8 +5,7 @@
 }
 
 body {
-    
-    /* background-color: black; */
+  /* background-color: black; */
   display: grid;
 }
 
@@ -14,8 +13,6 @@ body {
   height: 100vh;
   /* background-color: rgb(70, 207, 207); */
   /* place-content: center; */
- 
-
 }
 
 .main {
@@ -27,7 +24,6 @@ body {
     0.1fr 0.5fr 0.5fr 0.1fr;
   /* background-color: rgb(65, 65, 209); */
   place-content: center;
-  
 }
 
 .phone-frame {
@@ -35,12 +31,57 @@ body {
   display: grid;
   /* background-color: rgb(96, 119, 119); */
   place-content: center;
+  /* position: relative; */
 }
 
-.iphone{
-    display: grid;
-    height: 400px;
-    
+.pic-transition1 {
+  position: absolute;
+  height: 48.5%;
+  top: 166px;
+  left: 346px;
+  animation: transition 20s infinite;
+}
+.pic-transition2 {
+  position: absolute;
+  height: 48.5%;
+  top: 166px;
+  left: 346px;
+  animation: transition 15s infinite;
+}
+
+.pic-transition3 {
+  position: absolute;
+  height: 48.5%;
+  top: 166px;
+  left: 346px;
+  animation: transition 19s infinite;
+}
+.pic-transition4 {
+  position: absolute;
+  height: 48.5%;
+  top: 166px;
+  left: 346px;
+  animation: transition 5s infinite;
+}
+
+@keyframes transition {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.iphone {
+  display: grid;
+  height: 400px;
 }
 
 .log-in-box {
@@ -49,116 +90,118 @@ body {
   /* background-color: rgb(245, 157, 24); */
   justify-content: center;
   grid-gap: 20px;
-  
-  
-  
 }
-.insta-logo{
-    /* background-color: aqua; */
-    height: 50px;
-    
+.insta-logo {
+  /* background-color: aqua; */
+  height: 50px;
 }
 
-.log-in-form{
-    display: grid;
-    grid-gap: 10px;
+.log-in-form {
+  display: grid;
+  grid-gap: 10px;
 }
 
-.username{
-    line-height: 18px;
-    width: 250px;
-    padding: 9px 0px 7px 8px;
-    border:1px solid #dbdbdb;
-    transition: 0.5s;
+.username {
+  line-height: 18px;
+  width: 250px;
+  padding: 9px 0px 7px 8px;
+  border: 1px solid #dbdbdb;
+  transition: 0.5s;
 }
-.username:focus{
-    outline: 1px solid #757575;
-    font-size: 10px;
+.username:focus {
+  outline: 1px solid #757575;
+  font-size: 10px;
 }
-.password:focus{
-    font-size: 10px;
-    outline: 1px solid #757575;
-}
-
-.password{
-    line-height: 18px;
-    width: 250px;
-    padding: 9px 0px 7px 8px;
-    border:1px solid #dbdbdb;
-    transition: 0.5s;
-
-}
-.button{
-    display: grid;
-    justify-content: center;
-    /* border-bottom: 1px solid rgb(185, 183, 183); */
-    background-color: #b2dffc;
-    width: 250px; 
-    transition: 0.5s;
-    
-}
-.button:hover{
-    background-color: #0095f6;
+.password:focus {
+  font-size: 10px;
+  outline: 1px solid #757575;
 }
 
-.button-link:focus{
-    outline: 1px solid black;
+.password {
+  line-height: 18px;
+  width: 250px;
+  padding: 9px 0px 7px 8px;
+  border: 1px solid #dbdbdb;
+  transition: 0.5s;
+}
+.button {
+  display: grid;
+  justify-content: center;
+  /* border-bottom: 1px solid rgb(185, 183, 183); */
+  background-color: #b2dffc;
+  width: 250px;
+  transition: 0.5s;
+}
+.button:hover {
+  background-color: #0095f6;
 }
 
-.log-in-button{
-    background: none;
-    border: none;
-    outline: none;
-    color: white;
-    font-size: 15px;
-    line-height: 18px;
-    transition: 0.5s;
+.button-link:focus {
+  outline: 1px solid black;
 }
 
-
-
-.or{
-    display: flex;
-    justify-content: center;
-    
+.log-in-button {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  line-height: 18px;
+  transition: 0.5s;
 }
 
-a{
-    text-decoration: none;
-    color: #385185;
+.or {
+  display: flex;
+  justify-content: center;
+}
 
+a {
+  text-decoration: none;
+  color: #385185;
 }
 
 .sign-up {
-    display: flex;
-    border: 1px solid rgb(135, 135, 139);
-    grid-gap: 5px;
-    padding: 15px;
+  display: flex;
+  border: 1px solid rgb(135, 135, 139);
+  grid-gap: 5px;
+  padding: 15px;
 }
 
-.adv, p, a{
+.adv,
+p,
+a {
+  display: grid;
+  justify-items: center;
+}
+.banner {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.banner-pic {
+  height: 40px;
+}
+
+.nav-list {
+  place-content: center;
+  justify-content: safe;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(80px, 0.12fr));
+  list-style: none;
+  font-size: small;
+  padding: 20px;
+  grid-gap: 5px;
+}
+
+@media (max-width: 1308px) {
+  .main {
     display: grid;
-    justify-items: center;
-}
-.banner{
-    display: grid;
-    grid-auto-flow: column;
-}
+    grid-template:
+      "  log-in-box  " 0.5fr/
+      1fr;
+  }
 
-.banner-pic{
-    height: 40px;
+  .phone-frame {
+    display: none;
+  }
 }
-
-
-.nav-list{
-    place-content: center;
-    justify-content: safe;
-    display: grid;
-    grid-template-columns: repeat(5, minmax(80px, 0.12fr));
-    list-style: none;
-    font-size: small;
-    padding: 20px;
-    grid-gap: 5px;
-    
-}
-

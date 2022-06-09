@@ -6,8 +6,6 @@
     Arial, sans-serif;
 }
 
-body {
-}
 
 .page-container {
   height: 100vh;
@@ -32,6 +30,10 @@ body {
   /* grid-column-gap: 10px ; */
   /* grid-gap: 100px; */
   justify-content: space-around;
+  background-color: #ffffff;
+  
+  
+  
 }
 .instagram-logo-pic {
   height: 40px;
@@ -120,6 +122,7 @@ body {
   grid-area: right-sidebar;
   outline: 1px solid rgb(184, 180, 180);
   height: 60vh;
+  
 }
 
 .side-profile {
@@ -271,4 +274,27 @@ body {
 .comment-box {
   border: none;
   outline: none;
+}
+
+
+@media (max-width: 768px) {
+
+  .page-container{
+    display: grid;
+    grid-template:
+    "  header  " 50px
+    " stories  " 100px
+    " main-posts " 1fr/
+    1fr  ;
+  grid-gap: 20px;
+
+  }
+  .right-sidebar{display: none;}
+  .space2{display: none;}
+  .space1{display: none;}
+  
+}
+
+@media (max-width: 600px){
+  .stories{}
 }

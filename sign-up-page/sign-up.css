@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+body {
+  /* background-color: black; */
+  display: grid;
+}
+
+.container {
+  height: 100vh;
+  /* background-color: rgb(70, 207, 207); */
+  /* place-content: center; */
+}
+
+.main {
+  height: 100vh;
+
+  display: grid;
+  grid-template:
+    ". log-in-box . " 0.5fr/
+    0.1fr 300px 0.1fr;
+  /* background-color: rgb(65, 65, 209); */
+  place-content: center;
+}
+
+.log-in-box {
+  grid-area: log-in-box;
+  display: grid;
+  /* background-color: rgb(245, 157, 24); */
+  justify-items: center;
+  grid-gap: 20px;
+}
+.insta-logo {
+  /* background-color: aqua; */
+  height: 50px;
+}
+.facebook-adv{
+    color: #8e8e8e;
+    text-align: center;
+}
+.facebook {
+  background-color: #0095f6;
+}
+.facebook a {
+  color: white;
+  
+  font-weight: 450;
+}
+
+.log-in-form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.log-in-info{
+    display: grid;
+   justify-content: center;
+   grid-gap: 10px;
+   
+  
+}
+
+.username {
+  line-height: 18px;
+  width: 250px;
+  padding: 9px 0px 7px 8px;
+  border: 1px solid #dbdbdb;
+  transition: 0.5s;
+}
+.username:focus {
+  outline: 1px solid #757575;
+  font-size: 10px;
+}
+.password:focus {
+  font-size: 10px;
+  outline: 1px solid #757575;
+}
+
+.password {
+  line-height: 18px;
+  width: 250px;
+  padding: 9px 0px 7px 8px;
+  border: 1px solid #dbdbdb;
+  transition: 0.5s;
+}
+.button {
+  display: grid;
+  justify-content: center;
+  /* border-bottom: 1px solid rgb(185, 183, 183); */
+  background-color: #b2dffc;
+  width: 250px;
+  transition: 0.5s;
+}
+.button:hover {
+  background-color: #0095f6;
+}
+
+.button-link:focus {
+  outline: 1px solid black;
+}
+
+.log-in-button {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  line-height: 18px;
+  transition: 0.5s;
+}
+
+.or {
+  display: flex;
+  justify-content: center;
+  color: #8e8e8e;
+}
+
+a {
+  text-decoration: none;
+  color: #385185;
+}
+.learn-more{
+    text-align: center;
+    color: #8e8e8e;
+    font-size: small;
+}
+.learn-more a{
+    color:#8a8a8a ;
+    font-weight: 600;
+}
+
+.sign-up {
+  display: grid;
+  grid-auto-flow: column;
+  border: 1px solid rgb(135, 135, 139);
+  grid-gap: 5px;
+  padding: 20px;
+  justify-content: center;
+  /* text-align: center; */
+}
+.sign-up a{
+    color: #0095f7;
+    font-weight: 400;
+}
+
+.adv,
+p,
+a {
+  display: grid;
+  justify-items: center;
+}
+.banner {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.banner-pic {
+  height: 40px;
+}
+
+.nav-list {
+  place-content: center;
+  justify-content: safe;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(80px, 0.12fr));
+  list-style: none;
+  font-size: small;
+  padding: 20px;
+  grid-gap: 5px;
+}
