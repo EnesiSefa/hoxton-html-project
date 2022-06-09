@@ -106,6 +106,21 @@
   grid-auto-flow: column;
   /* background-color: rgb(245, 226, 220); */
 }
+.edit-button:hover{
+  cursor: pointer;
+}
+.edit-button{
+  background-color: #ffffff;
+  outline: 1px solid rgb(168, 165, 165);
+  border: none;
+  border-radius: 2px;
+  padding: 4px ;
+}
+.edit-button:focus{
+  
+  color: rgb(139, 139, 139);
+
+}
 .profile-follower-stat {
   
   display: grid;
@@ -130,9 +145,15 @@
   display: grid;
   justify-items: center;
 }
-.story-pic {
-  height: 50px;
+.stories img{
+  height: 70px;
   clip-path: circle();
+
+
+}
+.story-pic {
+  
+  /* object-fit: cover; */
 }
 
 .feed-post{
