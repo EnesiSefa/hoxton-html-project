@@ -80,16 +80,21 @@
   grid-auto-flow: column;
 
   align-items: center;
+  justify-items: center;
 }
 
-.profile-icon {
+.profile-icon img{
   /* background-color: rgba(165, 42, 42, 0.616); */
   /* width: fit-content; */
+  height: 150px;
+  object-fit: contain;
+  
 }
 
 .profile-pic {
-  height: 120px;
+  /* height: 10px; */
   clip-path: circle();
+
 }
 
 .profile-info {
@@ -103,6 +108,11 @@
   display: grid;
   grid-auto-flow: column;
   /* background-color: rgb(245, 226, 220); */
+  grid-gap: 20px;
+}
+.edit{
+  display: grid;
+  
 }
 .edit-button:hover {
   cursor: pointer;
@@ -112,7 +122,7 @@
   outline: 1px solid rgb(168, 165, 165);
   border: none;
   border-radius: 2px;
-  padding: 4px;
+  
 }
 .edit-button:focus {
   color: rgb(139, 139, 139);
@@ -122,9 +132,12 @@
   grid-auto-flow: column;
   /* background-color: rgb(216, 216, 25); */
   font-size: small;
+  grid-gap: 40px;
 }
 
 .profile-name-bio {
+  display: grid;
+  
 }
 
 .story-archive {
@@ -172,9 +185,7 @@
 .feed-links:focus {
   color: black;
 }
-.feed-navigation-icons {
-  /* height: 30px; */
-}
+
 
 .feed-content {
   display: grid;
