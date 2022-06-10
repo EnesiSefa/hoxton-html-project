@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-container {
+  height: 100vh;
+
+  /* background-color: rgba(172, 163, 41, 0.397); */
+  display: grid;
+  grid-template:
+    " header header header  " 50px
+    ". main-box .  " 0.9fr/
+    0.2fr 0.8fr 0.2fr;
+  grid-gap: 20px;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-auto-flow: column;
+  /* background-color: rgba(0, 255, 255, 0.733); */
+  place-items: center;
+  border-bottom: 1px solid rgb(180, 180, 180);
+}
+.instagram-logo-pic {
+  height: 40px;
+}
+
+.searchbar {
+  display: grid;
+  grid-auto-flow: column;
+  border-radius: 5px;
+  background-color: #efefef;
+  /* place-content: center; */
+}
+.searchbar-inside {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #efefef;
+}
+
+.navigation-panel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+}
+.nav-profile-pic {
+  height: 30px;
+}
+
+.main-box {
+  grid-area: main-box;
+  display: grid;
+  grid-template:
+    "username-box messages-box" 50px
+    "friends-box messages-box" 1fr/
+    0.3fr 0.7fr;
+  /* background-color: aqua; */
+  border: 1px solid rgb(143, 143, 143);
+  border-radius: 3px;
+}
+
+.username-box {
+  grid-area: username-box;
+  /* background-color: blueviolet; */
+  /* outline: 1px solid black; */
+  border-bottom: 1px solid rgb(168, 168, 168);
+
+}
+.username{
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}
+.friends-main-box {
+  grid-area: friends-box;
+  /* background-color: yellow; */
+  display: grid;
+  grid-template-rows: 0.1fr auto;
+  
+}
+.messages-request {
+  /* background-color: rgb(87, 240, 66); */
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.request-indicator a{
+    text-decoration: none;
+    color: #0095f6;
+}
+
+.friends-profile {
+  display: grid;
+  /* grid-auto-flow: row; */
+  grid-template:
+    "friends-inner-box" 0.4fr/
+    1fr;
+    padding: 10px;
+}
+
+.friends-inner-box {
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: start;
+ 
+
+  align-items: center;
+}
+
+.friends-profile-icon img {
+  height: 90px;
+  clip-path: circle();
+}
+
+.friends-info {
+  display: grid;
+  grid-gap: 3px;
+}
+.profile-info-username{
+    
+}
+
+.new-message-dot span{
+    background-color:#0095f6 ;
+    clip-path: circle(20%);
+}
+
+.messages-box {
+  grid-area: messages-box;
+  /* background-color: tomato; */
+  border-left: 1px solid rgb(160, 160, 160);
+}
