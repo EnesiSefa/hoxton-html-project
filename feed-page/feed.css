@@ -16,7 +16,7 @@
     ". main . " 0.9fr
     ". footer ." 0.1fr/
     100px 1fr 100px;
-    grid-gap: 20px;
+  grid-gap: 20px;
 }
 
 .header {
@@ -57,7 +57,7 @@
 .main {
   grid-area: main;
   display: grid;
- 
+
   justify-content: center;
 }
 
@@ -83,18 +83,16 @@
   justify-items: center;
 }
 
-.profile-icon img{
+.profile-icon img {
   /* background-color: rgba(165, 42, 42, 0.616); */
   /* width: fit-content; */
   height: 150px;
   object-fit: contain;
-  
 }
 
 .profile-pic {
   /* height: 10px; */
   clip-path: circle();
-
 }
 
 .profile-info {
@@ -110,9 +108,8 @@
   /* background-color: rgb(245, 226, 220); */
   grid-gap: 20px;
 }
-.edit{
+.edit {
   display: grid;
-  
 }
 .edit-button:hover {
   cursor: pointer;
@@ -122,7 +119,6 @@
   outline: 1px solid rgb(168, 165, 165);
   border: none;
   border-radius: 2px;
-  
 }
 .edit-button:focus {
   color: rgb(139, 139, 139);
@@ -137,7 +133,6 @@
 
 .profile-name-bio {
   display: grid;
-  
 }
 
 .story-archive {
@@ -186,7 +181,6 @@
   color: black;
 }
 
-
 .feed-content {
   display: grid;
   grid-auto-flow: column;
@@ -205,8 +199,18 @@
 
 .footer {
   grid-area: footer;
-  background-color: rgba(14, 27, 1, 0.582);
+
   height: auto;
+}
+.nav-list {
+  place-content: center;
+  justify-content: safe;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(80px, 0.12fr));
+  list-style: none;
+  font-size: small;
+  padding: 20px;
+  grid-gap: 5px;
 }
 
 @media (max-width: 668px) {
@@ -216,6 +220,6 @@
       "header  " 50px
       "main  " 0.9fr
       " footer " 0.1fr/
-       1fr ;
+      1fr;
   }
 }

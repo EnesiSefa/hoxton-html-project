@@ -10,10 +10,11 @@
   /* background-color: rgba(172, 163, 41, 0.397); */
   display: grid;
   grid-template:
-    " header header header  " 50px
+    " header header header  " 0.1fr
     ". main-box .  " 0.9fr/
     0.2fr 0.8fr 0.2fr;
   grid-gap: 20px;
+  
 }
 
 .header {
@@ -61,6 +62,7 @@
   /* background-color: aqua; */
   border: 1px solid rgb(143, 143, 143);
   border-radius: 3px;
+  
 }
 
 .username-box {
@@ -68,19 +70,17 @@
   /* background-color: blueviolet; */
   /* outline: 1px solid black; */
   border-bottom: 1px solid rgb(168, 168, 168);
-
 }
-.username{
-    display: grid;
-    justify-content: center;
-    padding: 10px;
+.username {
+  display: grid;
+  justify-content: center;
+  padding: 10px;
 }
 .friends-main-box {
   grid-area: friends-box;
   /* background-color: yellow; */
   display: grid;
   grid-template-rows: 0.1fr auto;
-  
 }
 .messages-request {
   /* background-color: rgb(87, 240, 66); */
@@ -90,9 +90,9 @@
   padding: 10px;
 }
 
-.request-indicator a{
-    text-decoration: none;
-    color: #0095f6;
+.request-indicator a {
+  text-decoration: none;
+  color: #0095f6;
 }
 
 .friends-profile {
@@ -101,14 +101,13 @@
   grid-template:
     "friends-inner-box" 0.4fr/
     1fr;
-    padding: 10px;
+  padding: 10px;
 }
 
 .friends-inner-box {
   display: grid;
   grid-auto-flow: column;
   justify-items: start;
- 
 
   align-items: center;
 }
@@ -122,13 +121,12 @@
   display: grid;
   grid-gap: 3px;
 }
-.profile-info-username{
-    
+.profile-info-username {
 }
 
-.new-message-dot span{
-    background-color:#0095f6 ;
-    clip-path: circle(20%);
+.new-message-dot span {
+  background-color: #0095f6;
+  clip-path: circle(20%);
 }
 
 .messages-box {
@@ -139,28 +137,31 @@
   place-content: center;
 }
 
-.messages-box-inside{
-    display: grid;
-    justify-items: center;
-    grid-gap: 20px;
-    
+.messages-box-inside {
+  display: grid;
+  justify-items: center;
+  grid-gap: 20px;
 }
-.messages-box-inside button{
-    display: grid;
+.messages-box-inside button {
+  display: grid;
   justify-content: center;
-  border:none;
-  background-color: #0095f6 ;
+  border: none;
+  background-color: #0095f6;
   width: 0.1fr;
   padding: 5px;
   color: white;
-  
 }
-.messages-box-inside span{
-    font-size: 25px;
-    font-weight: normal;
-    
+.messages-box-inside span {
+  font-size: 25px;
+  font-weight: normal;
 }
 
-.messages-box-inside p{
-    color: #8e8e8e;
+.messages-box-inside p {
+  color: #8e8e8e;
 }
+
+
+@media (max-width: 668px) {
+
+    
+  }
