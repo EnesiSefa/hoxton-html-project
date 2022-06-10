@@ -135,4 +135,32 @@
   grid-area: messages-box;
   /* background-color: tomato; */
   border-left: 1px solid rgb(160, 160, 160);
+  display: grid;
+  place-content: center;
+}
+
+.messages-box-inside{
+    display: grid;
+    justify-items: center;
+    grid-gap: 20px;
+    
+}
+.messages-box-inside button{
+    display: grid;
+  justify-content: center;
+  border:none;
+  background-color: #0095f6 ;
+  width: 0.1fr;
+  padding: 5px;
+  color: white;
+  
+}
+.messages-box-inside span{
+    font-size: 25px;
+    font-weight: normal;
+    
+}
+
+.messages-box-inside p{
+    color: #8e8e8e;
 }
